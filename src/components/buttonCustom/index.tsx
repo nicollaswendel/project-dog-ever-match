@@ -1,4 +1,4 @@
-import { Text, View, TouchableOpacity, StyleProp, ViewStyle, TextStyle } from "react-native"
+import { StyleProp, Text, TextStyle, TouchableOpacity, View, ViewStyle } from "react-native"
 import { styles } from "./styles"
 
 interface IProps {
@@ -14,10 +14,10 @@ export const ButtonCustom = ({
     title,
     onPress
 }: IProps) => {
-    return (
+    return(
         <View>
             <TouchableOpacity onPress={onPress} style={[styles.container, styleContainer]}>
-                <Text style={[styleText, styles.title]}>{title}</Text>
+                    <Text style={[styleText, styles.title]}>{title}</Text>
             </TouchableOpacity>
         </View>
     )
